@@ -60,7 +60,7 @@ return(
             value={password}
             onChange={(e)=>{setPassword(e.target.value)}}/>
 
-            <button onClick={()=>setShow(prev=>!prev)} type="button" className="text-base font-bold text-center pt-6 pl-2 text-blue-700 hover:text-blue-500">{show? "🔒 Hide password":"👁️ Show password"}</button>
+            <button onClick={()=>setShow(prev=>!prev)} type="button" className="text-base font-bold text-center pt-6 pl-2 text-blue-700 hover:text-blue-500">{show ? "🔒 Hide password":"👁️ Show password"}</button>
         
            </div>
           <button
