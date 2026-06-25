@@ -28,7 +28,6 @@ const datafelter=datajat.find((item)=>item.email===email && item.password===pass
   setPassword("")
 }
 
-
 return(
 
   <div className="min-h-screen flex items-center justify-center bg-gray-100">
