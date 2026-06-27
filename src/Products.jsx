@@ -23,7 +23,7 @@ const listUp=[...dataC,product]
 
 localStorage.setItem("product",JSON.stringify(listUp))
 
-alert(`${product.title}Product added!`)
+
   }
    
 

@@ -1,8 +1,20 @@
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 
 
 export default function Header(){
+const [cartCount,setCartCount]=useState(0)
+
+useEffect(()=>{
+
+const data=localStorage.getItem("product")
+const cardItem=data? JSON.parse(data):[]
+
+setCartCount(cardItem.length)
+
+
+})
 
 
 return(
@@ -37,8 +49,26 @@ return(
             <li>
               <Link className="text-gray-500 transition hover:text-blue-500" to="/contact"> Contact </Link>
             </li>
+            
+            <li>
+             <div className="relative inline-block p-2 cursor-pointer group">
+  
+  <svg 
+    className="w-7 h-7 text-gray-700 transition duration-300 group-hover:text-yellow-500" 
+    xmlns="http://www.w3.org/2000/svg" 
+    viewBox="0 0 1024 1024"
+  >
+    <path d="M373.3 916.1c32.8 0 59.4-26.6 59.5-59.4 0-32.8-26.6-59.4-59.5-59.4-32.8 0-59.4 26.6-59.4 59.4 0 32.8 26.6 59.4 59.4 59.4z m396.2 0c32.8 0 59.4-26.6 59.5-59.4 0-32.8-26.6-59.4-59.5-59.4-32.8 0-59.4 26.6-59.4 59.4 0 32.8 26.6 59.4 59.4 59.4z m-684.2-815.1l90.3 17.4c49.9 9.6 88.7 49.2 97.2 99.4l2.3 13.8 486.2 0c91.4 0 165.5 74.1 165.5 165.5 0 8.8-0.7 17.6-2.1 26.3l-28.9 179.1c-12.6 78.3-80.2 135.8-159.4 135.8l-335.9 0c-80.8 0-149.1-59.7-160-139.6l-43-314.8-0.5-2.3-8.4-49.6c-2.5-15-14.2-26.9-29.1-29.8l-90.3-17.4c-23.1-4.4-38.3-26.8-33.9-49.9 4.4-23.1 26.8-38.3 50-33.9z m676 216l-473.2 0 36.9 270.1c5.2 37.7 37.4 65.9 75.5 65.9l335.9 0c37.4 0 69.3-27.1 75.2-64.1l28.9-179c0.7-4.2 1-8.5 1-12.8 0-44.3-35.9-80.2-80.2-80.1z"></path>
+  </svg>
 
-
+  
+  
+    <div className="absolute top-0 right-0 transform translate-x-1/3 -translate-y-1/3 bg-yellow-400 text-black text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center border-2 border-white shadow-sm animate-pulse">
+      <span>{cartCount}</span>
+    </div>
+ 
+</div>
+            </li> 
           </ul>
         </nav>
       </div>
