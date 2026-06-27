@@ -1,4 +1,4 @@
-export default function ProductCard(){
+export default function ProductCard({image,title,price}){
 
 
     return(
@@ -12,14 +12,14 @@ export default function ProductCard(){
     </svg>
   </button>
 
-  <img src="https://images.unsplash.com/photo-1599481238640-4c1288750d7a?auto=format&amp;fit=crop&amp;q=80&amp;w=1160" alt="" className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
+  <img src={image} alt="" className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
 
   <div className="relative border border-gray-100 bg-white p-6">
     <span className="bg-yellow-400 px-3 py-1.5 text-xs font-medium whitespace-nowrap"> New </span>
 
-    <h3 className="mt-4 text-lg font-medium text-gray-900">Robot Toy</h3>
+    <h3 className="mt-4 text-lg font-medium text-gray-900">{title}</h3>
 
-    <p className="mt-1.5 text-sm text-gray-700">$14.99</p>
+    <p className="mt-1.5 text-sm text-gray-700">{price}</p>
 
     <form className="mt-4">
       <button className="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105">
