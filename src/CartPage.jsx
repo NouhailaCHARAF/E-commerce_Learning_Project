@@ -25,7 +25,7 @@ setListData(dataUpdate)
 
 localStorage.setItem("product",JSON.stringify(dataUpdate))
  }
- 
+
  
 return(
 
