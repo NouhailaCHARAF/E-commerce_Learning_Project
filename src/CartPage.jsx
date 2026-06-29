@@ -26,6 +26,7 @@ setListData(dataUpdate)
 localStorage.setItem("product",JSON.stringify(dataUpdate))
  }
  
+ 
 return(
 
     <div className="max-w-6xl mx-auto p-6">
