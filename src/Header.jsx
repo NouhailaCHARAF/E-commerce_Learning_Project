@@ -34,20 +34,20 @@ return(
       <div className="hidden md:block">
         <nav aria-label="Global">
           <ul className="flex items-center gap-6 text-m ">
-            <li>
-              <Link className="text-gray-500 transition hover:text-blue-500" to="/"> Home </Link>
+            <li className="hover:bg-yellow-200 p-4  hover:rounded-lg">
+              <Link className="text-black  transition " to="/"> Home </Link>
             </li>
 
-            <li>
-              <Link className="text-gray-500 transition hover:text-blue-500" to="/about"> About </Link>
+            <li className="hover:bg-yellow-200 p-4 hover:rounded-lg">
+              <Link className="text-black transition " to="/about"> About </Link>
             </li>
 
-            <li>
-              <Link className="text-gray-500 transition hover:text-blue-500" to="/products"> Products </Link>
+            <li className="hover:bg-yellow-200 p-4 hover:rounded-lg">
+              <Link className="text-black transition " to="/products"> Products </Link>
             </li>
 
-            <li>
-              <Link className="text-gray-500 transition hover:text-blue-500" to="/contact"> Contact </Link>
+            <li className="hover:bg-yellow-200 p-4 hover:rounded-lg">
+              <Link className="text-black transition  " to="/contact"> Contact </Link>
             </li>
             
             <li>
@@ -75,12 +75,12 @@ return(
 
       <div className="flex items-center gap-4">
         <div className="sm:flex sm:gap-4">
-          <Link className="rounded-md bg-blue-600 px-5 py-2.5 text-m font-medium text-white shadow-sm" to="/login">
+          <Link className="rounded-md bg-green-600 px-5 py-2.5 text-m font-medium text-white shadow-sm" to="/login">
             Login
           </Link>
 
           <div className="hidden sm:flex">
-            <Link className="rounded-md bg-gray-100 px-5 py-2.5 text-m font-medium text-blue-600" to="/registration">
+            <Link className="rounded-md bg-gray-200 px-5 py-2.5 text-m font-medium text-green-700" to="/registration">
               Register
             </Link>
           </div>

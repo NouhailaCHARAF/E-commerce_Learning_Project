@@ -13,18 +13,18 @@ export default function TextImage(){
         <div>
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white leading-tight">
             Build modern websites
-            <span className="text-indigo-600"> with elegance</span>
+            <span className="text-green-600"> with elegance</span>
           </h1>
 
           <p className="mt-5 text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
-            Create fast, responsive and beautiful interfaces using Tailwind CSS.
-            Improve your user experience and boost conversions easily.
+            CDiscover a collection of stylish, high-quality bags designed for every occasion. 
+            From everyday essentials to travel and fashion accessories, our products combine durability, comfort, and timeless design to match your lifestyle.
           </p>
 
           <div className="mt-8">
             <Link
               to="/contact"
-              className="inline-block px-6 py-3 rounded-xl bg-indigo-600 text-white font-medium shadow-md hover:bg-indigo-700 transition"
+              className="inline-block px-6 py-3 rounded-xl bg-yellow-500 text-white font-medium shadow-md hover:bg-indigo-700 transition"
             >
               Contact Us
             </Link>
@@ -34,7 +34,7 @@ export default function TextImage(){
         
         <div className="flex justify-center md:justify-end">
           <img
-            src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+            src="\src\assets\bag.jpg"
             alt="Hero"
             className="w-full max-w-md rounded-2xl shadow-lg object-cover"
           />

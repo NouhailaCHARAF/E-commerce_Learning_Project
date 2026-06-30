@@ -68,7 +68,7 @@ export default function Contact() {
       
       <div className="py-10 flex justify-center items-center bg-black">
         <h2 className="text-white font-bold text-3xl">
-          OUR NEW COLLECTION
+          CONCTACT US
         </h2>
       </div>
 
@@ -121,7 +121,7 @@ export default function Contact() {
           
           <button
             type="submit"
-            className="w-full rounded-lg bg-indigo-600 px-4 py-3 text-sm font-medium text-white hover:bg-indigo-700 transition"
+            className="w-full rounded-lg bg-green-700 px-4 py-3 text-sm font-medium text-white hover:bg-green-600 transition"
           >
             Send Message
           </button>
@@ -135,7 +135,7 @@ export default function Contact() {
 
      <div className="max-w-4xl mx-auto p-6 bg-white rounded-xl shadow-sm border border-gray-100 mt-10">
   <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
-    <span className="h-2 w-2 rounded-full bg-indigo-600"></span>
+    <span className="h-2 w-2 rounded-full bg-green-600"></span>
     <button >Les Messages:</button>
   </h3>
 

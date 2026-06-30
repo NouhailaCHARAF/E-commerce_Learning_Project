@@ -29,46 +29,70 @@ localStorage.setItem("product",JSON.stringify(listUp))
 
     return(
 
-        <div className="grid gap-12">
-        <div className="py-10  flex justify-center items-center bg-black">
-            <h2 className="text-white font-bold text-3xl">OUER NEW COLLECTION</h2>
-        </div>
-
-
-       <div className="max-w-8xl mx-auto px-6 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-         
-         {listProduct.map((item)=> (
-
-            <a value={item.id} className="group relative block overflow-hidden">
-            <button className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
-            <span className="sr-only">Wishlist</span>
-
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-4">
-            <path strokeLinecap="round" strokeLinejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"></path>
-            </svg>
-            </button>
-
-            <img src={item.image} alt="" className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72" />
-
-            <div className="relative border border-gray-100 bg-white p-6">
-            <span className="bg-yellow-400 px-3 py-1.5 text-xs font-medium whitespace-nowrap"> New </span>
-
-            <h3 className="mt-4 text-lg font-medium text-gray-900">{item.title}</h3>
-
-            <p className="mt-1.5 text-sm text-gray-700">{item.price}</p>
-
-            <form className="mt-4">
-            <button className="block w-full rounded-sm bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105"   onClick={(e)=>addToCart(item,e)}>
-             Add to Cart
-            </button>
-           </form>
-           </div>
-        </a>
-         ))}
-        
        
 
-        </div>
-        </div>
+
+       <div className="max-w-7xl mx-auto px-6 py-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+
+  {listProduct.map((item) => (
+    <div
+      key={item.id}
+      className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
+    >
+      
+      <div className="relative overflow-hidden">
+
+        <button className="absolute top-4 right-4 z-10 bg-white p-2 rounded-full shadow hover:bg-red-500 hover:text-white transition">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            strokeWidth="1.5"
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12z"
+            />
+          </svg>
+        </button>
+
+        <span className="absolute top-4 left-4 bg-yellow-400 text-black text-xs font-semibold px-3 py-1 rounded-full">
+          NEW
+        </span>
+
+        <img
+          src={item.image}
+          alt={item.title}
+          className="w-full h-72 object-cover group-hover:scale-110 transition duration-500"
+        />
+      </div>
+
+     
+      <div className="p-6">
+
+        <h3 className="text-lg font-semibold text-gray-800">
+          {item.title}
+        </h3>
+
+        <p className="mt-2 text-2xl font-bold text-yellow-500">
+          ${item.price}
+        </p>
+
+        <button
+          onClick={(e) => addToCart(item, e)}
+          className="mt-6 w-full bg-gray-900 text-white py-3 rounded-xl hover:bg-yellow-400 hover:text-black transition duration-300 font-medium"
+        >
+          Add to Cart
+        </button>
+
+      </div>
+    </div>
+  ))}
+
+</div>
+        
     )
 }

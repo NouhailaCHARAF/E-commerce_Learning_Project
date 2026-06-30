@@ -38,7 +38,7 @@ export default function About(){
     
     <div>
       <img
-        src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
+        src="\src\assets\bag.jpg"
         alt="About image"
         className="rounded-2xl shadow-lg w-full object-cover"
       />
@@ -52,22 +52,22 @@ export default function About(){
     <div className="max-w-6xl mx-auto px-6 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
 
       <div>
-        <h3 className="text-3xl font-bold text-indigo-600">50+</h3>
+        <h3 className="text-3xl font-bold text-green-600">50+</h3>
         <p className="text-gray-600 mt-2">Projects</p>
       </div>
 
       <div>
-        <h3 className="text-3xl font-bold text-indigo-600">30+</h3>
+        <h3 className="text-3xl font-bold text-green-600">30+</h3>
         <p className="text-gray-600 mt-2">Clients</p>
       </div>
 
       <div>
-        <h3 className="text-3xl font-bold text-indigo-600">5+</h3>
+        <h3 className="text-3xl font-bold text-green-600">5+</h3>
         <p className="text-gray-600 mt-2">Years Experience</p>
       </div>
 
       <div>
-        <h3 className="text-3xl font-bold text-indigo-600">100%</h3>
+        <h3 className="text-3xl font-bold text-green-600">100%</h3>
         <p className="text-gray-600 mt-2">Satisfaction</p>
       </div>
 
@@ -75,19 +75,19 @@ export default function About(){
   </section>
 
   
-  <section className="py-16 bg-indigo-600 text-white text-center">
+  <section className="py-16 bg-yellow-700 text-white text-center">
 
     <h2 className="text-3xl font-bold">
       Want to work with us?
     </h2>
 
-    <p className="mt-3 text-indigo-100">
+    <p className="mt-3 text-green-100">
       Let’s build something amazing together.
     </p>
 
     <a
-      href="#"
-      className="inline-block mt-6 bg-white text-indigo-600 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
+      
+      className="inline-block mt-6 bg-white text-green-700 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition"
     >
       Contact Us
     </a>

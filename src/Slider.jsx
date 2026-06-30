@@ -6,12 +6,12 @@ export default function Slider(){
  
   return (
    
-<section className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900 bg-[url('src/assets/bgr.png')] bg-cover bg-center" >
+<section className="bg-white lg:grid lg:h-screen lg:place-content-center dark:bg-gray-900 bg-[url('src/assets/slider.png')] bg-cover bg-center" >
   <div className="mx-auto w-screen max-w-7xl px-4 py-16 sm:px-6 sm:py-24 md:grid md:grid-cols-2 md:items-center md:gap-4 lg:px-8 lg:py-32">
-    <div className="max-w-prose text-left bg-[#000000ba] p-[45px] border rounded-r-xl">
+    <div className="max-w-prose text-left bg-[#0000005c] p-[45px] border rounded-r-xl">
       <h1 className="text-4xl font-bold text-white sm:text-5xl dark:text-white">
         Understand user flow and
-        <strong className="text-indigo-600"> increase </strong>
+        <strong className="text-green-600"> increase </strong>
         conversions
       </h1>
 
@@ -22,7 +22,7 @@ export default function Slider(){
 
       <div className="mt-4 flex gap-4 sm:mt-6">
         <Link
-          className="inline-block rounded border border-indigo-600 bg-indigo-600 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-indigo-700"
+          className="inline-block rounded border border-green-600 bg-green-700 px-5 py-3 font-medium text-white shadow-sm transition-colors hover:bg-green-600"
           to="/contact"
         >
           Get Started

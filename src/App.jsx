@@ -10,7 +10,7 @@ import Footer from './Footer'
 import RegistrationForm from './RegisterForm'
 import LoginForm from './LoginForm'
 import CartPage from './CartPage'
-
+import ProductsPgae from './ProductsPage'
 
 
 
@@ -32,7 +32,7 @@ function App() {
    
    <Route path="/" element={<Home />}/>
    <Route path="/about" element={<About />}/>
-   <Route path="/products" element={<Product />}/>
+   <Route path="/products" element={<ProductsPgae />}/>
    <Route path="/contact" element={<Contact />}/>
    <Route path="/registration" element={<RegistrationForm />}/>
    <Route path="/login" element={<LoginForm />}/>
